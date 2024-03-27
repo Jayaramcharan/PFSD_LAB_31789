@@ -3,9 +3,9 @@ import psycopg2
 
 def create_table():
     conn = psycopg2.connect(
-        database="CMS", user='postgres',
-        password='Rama9999',
-        host='127.0.0.1', port='5433'
+        database="flask", user='postgres',
+        password='charan',
+        host='127.0.0.1', port= '5433'
     )
     cursor = conn.cursor()
     cursor.execute('''
@@ -26,9 +26,9 @@ create_table()
 
 def insert_function(name, age, phone_number, aadhar_number, email_id):
     conn = psycopg2.connect(
-        database="CMS", user='postgres',
-        password='Rama9999',
-        host='127.0.0.1', port='5433'
+       database="flask", user='postgres',
+        password='charan',
+        host='127.0.0.1', port= '5433'
     )
     cursor = conn.cursor()
     cursor.execute('''
